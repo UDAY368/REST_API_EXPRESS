@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Form</title>
+  <style>
+    body{
+      padding: 0;
+      margin: 0;
+      
+    }
+    .form{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(87, 255, 255);
+    }
+    .head{
+      text-align: center;
+    }
+    .formBox{
+      background-color: white;
+      padding: 20px 40px;
+      border-radius: 10px;
+      width: 30%;
+    }
+    .button{
+      padding: 8px 14px;
+      background-color: black;
+      color: white;
+      border-width: 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .inputBox{
+      padding: 5px 10px;
+      height: 20px;
+      width: 80%;
+      border : none;
+      border-bottom: 1px solid black;
+      outline: none;
+      font-size: 16px;
+      margin-left: 30px;
+      margin-bottom: 15px;
+    }
+    .butBox{
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="form">
+    <form action="api/register" method="POST" class="formBox">
+      <h1 class="head">Register Here</h1>
+      <input type="text" placeholder="Enter your name" name="name" id = "name" class="inputBox"> <br> <br> 
+      <input type="email" name="email" id="email" placeholder="Enter your email" class="inputBox"><br> <br> 
+      <input type="password" name="password" id="password" placeholder="Enter your password" class="inputBox"><br> <br>
+      <div class="butBox">
+        <button type="submit" class="button">Submit</button>
+      </div>
+    </form>
+  </div>
+  
+</body>
+</html>
